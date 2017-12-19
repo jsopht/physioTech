@@ -246,7 +246,7 @@
   <div class="form-group row">
     <div class="col-12 mt-3">
       <hr>
-      <a href="{{ route('evolucao.create', ['evaluation' => $evaluation->id]) }}" class="btn btn-outline-primary mt-2">Nova elovução</a>
+      <a href="{{ route('evolucao.create', ['evaluation' => $evaluation->id]) }}" class="btn btn-outline-primary mt-2">Nova Evolução</a>
     </div>
     @forelse ($evaluation->evolutions as $evolution)
       <div class="col-12 mb-2 mt-5" id="ev-{{ $evolution->id }}">
