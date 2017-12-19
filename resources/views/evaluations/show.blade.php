@@ -124,4 +124,7 @@
       @endif
     </div>
   </div>
+  <script type="text/javascript">
+    javascript:window.print()
+  </script>
 @endsection
