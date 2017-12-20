@@ -30,9 +30,8 @@ class CreateEvaluationsTable extends Migration
             $table->string('pa')->nullable();
             $table->string('fc')->nullable();
 
-            $table->longText('qp')->nullable();
-            $table->longText('hma')->nullable();
-            $table->longText('hpp')->nullable();
+            $table->text('qp')->nullable();
+            $table->text('hda')->nullable();
             $table->string('associated_diseases')->nullable();
             $table->text('associated_diseases_specifications')->nullable();
 
@@ -47,9 +46,9 @@ class CreateEvaluationsTable extends Migration
             $table->string('family_history')->nullable();
             $table->text('family_history_specifications')->nullable();
 
-            $table->longText('previous_treatments')->nullable();
-            $table->longText('complementary_exams')->nullable();
-            $table->longText('physical_exam')->nullable();
+            $table->text('previous_treatments')->nullable();
+            $table->text('complementary_exams')->nullable();
+            $table->text('physical_exam')->nullable();
 
             $table->timestamps();
             $table->softDeletes();

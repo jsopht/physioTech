@@ -91,13 +91,8 @@
           </div>
 
           <div class="col-12">
-            <label for="hma"><strong>HMA</strong></label>
-            <textarea rows="1" class="form-control" id="hma" name="hma">{{ old('hma') }}</textarea>
-          </div>
-
-          <div class="col-12">
-            <label for="hpp"><strong>HPP</strong></label>
-            <textarea rows="1" class="form-control" id="hpp" name="hpp">{{ old('hpp') }}</textarea>
+            <label for="hda"><strong>HDA</strong></label>
+            <textarea rows="1" class="form-control" id="hda" name="hda">{{ old('hda') }}</textarea>
           </div>
 
           <div class="col-12">

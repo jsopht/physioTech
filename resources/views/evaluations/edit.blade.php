@@ -12,7 +12,7 @@
         <input name="_method" type="hidden" value="PUT">
         <input type="hidden" id="evaluation-id" value="{{ $evaluation->id }}">
         <label class="form-check-label">
-          <input type="checkbox" class="form-check-input print-check" checked id="print-evaluation"> Imprimir Avaliação
+          <input type="checkbox" class="form-check-input print-check" id="print-evaluation"> Imprimir Avaliação
         </label>
         <h3 class="mt-3">Dados Pessoais</h3>
         <div class="form-group row">
@@ -98,13 +98,8 @@
           </div>
 
           <div class="col-12">
-            <label for="hma"><strong>HMA</strong></label>
-            <textarea rows="1" class="form-control" id="hma" name="hma">{{ old('hma', $evaluation->hma) }}</textarea>
-          </div>
-
-          <div class="col-12">
-            <label for="hpp"><strong>HPP</strong></label>
-            <textarea rows="1" class="form-control" id="hpp" name="hpp">{{ old('hpp', $evaluation->hpp) }}</textarea>
+            <label for="hda"><strong>HDA</strong></label>
+            <textarea rows="1" class="form-control" id="hda" name="hda">{{ old('hda', $evaluation->hda) }}</textarea>
           </div>
 
           <div class="col-12">
@@ -252,7 +247,7 @@
       <div class="col-12 mb-2 mt-5" id="ev-{{ $evolution->id }}">
         <div class="float-left">
           <label class="m-0">
-            <input type="checkbox" checked class="print-check print-evolution" id="{{ $evolution->id }}"> Imprimir
+            <input type="checkbox" class="print-check print-evolution" id="{{ $evolution->id }}"> Imprimir
           </label>
         </div>
         <div class="float-right">

@@ -33,8 +33,10 @@ class EvaluationController extends Controller
             return redirect()->back()->withErrors($validator->errors())->withInput();
         }
 
-        if(Evaluation::create($request->all())) {
-            return back()->withSuccess('Avaliação criada com sucesso!');
+        if($evaluation = Evaluation::create($request->all())) {
+            return redirect()
+                ->route('avaliacao.edit', $evaluation->id)
+                ->withSuccess('Avaliação criada com sucesso!');
         }
 
         $request->merge(['associated_diseases' => strToArray($request->associated_diseases)]);

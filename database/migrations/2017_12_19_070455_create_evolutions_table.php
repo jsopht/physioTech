@@ -20,7 +20,7 @@ class CreateEvolutionsTable extends Migration
               ->references('id')->on('evaluations')
               ->onDelete('cascade');
 
-            $table->longText('description');
+            $table->mediumText('description');
             $table->date('evolution_date');
             $table->timestamps();
             $table->softDeletes();

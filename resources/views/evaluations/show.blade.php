@@ -46,8 +46,7 @@
 
         <div class="col-12 my-2 title"><h5>Anamnese</h5></div>
         <div class="col-12"><strong>Q.P.:</strong> {{ $evaluation->qp }}</div>
-        <div class="col-12"><strong>HMA:</strong> {{ $evaluation->hma }}</div>
-        <div class="col-12"><strong>HPP:</strong> {{ $evaluation->hpp }}</div>
+        <div class="col-12"><strong>HDA:</strong> {{ $evaluation->hda }}</div>
         <div class="col-12 no-line"><strong>Doenças associadas:</strong>
           <div class="form-check form-check-inline ">
             <label class="form-check-label ml-0">
