@@ -112,7 +112,7 @@
         <div class="col-12">{{ $evaluation->physical_exam }}</div>
       @endif
 
-      @if(count($evolutions))
+      @if(isset($evolutions) && count($evolutions))
         <div class="col-12 my-2 title"><h5>Evoluções</h5></div>
 
         @foreach($evolutions as $evolution)
